@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPS and Divide-and-Conquer</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+p {
+    color: #666;
+    line-height: 1.5;
+}
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#result {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>GPS and Divide-and-Conquer</h1>
+    <p><img src="../GPS_night_2048x1024.png.webp" alt="GPS" style="float:left; margin-right:20px; width: 200px;">Divide and Conquer is a problem-solving strategy that involves breaking down a complex problem into smaller, more manageable parts, solving each part individually, and then combining the solutions to solve the original problem. It efficiently uses cache memory without occupying much space because it solves simple sub-problems within the cache memory instead of accessing the slower main memory. It is a widely used algorithmic technique in computer science .</p>
+    <p><img src="blog-what-is-gps-hero@2x.png.jpeg" alt="Satellites" style="float:right; margin-left:20px; width: 200px;">GPS is a radio navigation system used on land, sea, and air to determine the exact location, time, and velocity irrespective of weather conditions. GPS is a system made up of three parts: satellites, ground stations, and receivers. GPS has a system of 30+ navigation satellites orbiting the Earth. We know their location precisely because they invariably send out signals. The GPS receiver in your phone receives these signals. Once the receiver calculates its distance from four or more GPS satellites, it can figure out exactly where you are.</p>
+    <button onclick="getLocation()">Get User Location</button>
+    <div id="result"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
